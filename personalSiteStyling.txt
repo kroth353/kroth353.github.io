@@ -3,5 +3,9 @@
 	display: grid;
 	grid-template-rows: 80px 200px;
 	grid-template-columns: auto auto auto;
-	background-color: #88b378
+}
+
+.header {
+	grid-row: 1;
+	background-color: "c8d9c1"
 }
