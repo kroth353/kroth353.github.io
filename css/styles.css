@@ -1,0 +1,38 @@
+.navbar {
+   width: 100%;
+   height: 100px;
+   margin: 0%;
+   background-color: #dae5de;
+   text-align: center;
+   vertical-align: top;
+}
+
+.navbar a:hover{
+    background-color: #b2afaf;
+    text-decoration-color: #ecfaf1;
+}
+
+.navButton{
+    width: 20%;
+    border-radius: 30px;
+    height: 40px;
+    background-color: #d7d7d7;
+    align-content: center;
+}
+
+body{
+    background-color: #d7d7d7;
+    align-content: center;
+    text-align: center;
+}
+
+a{
+    margin: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+}
