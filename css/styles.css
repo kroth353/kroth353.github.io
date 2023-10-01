@@ -14,7 +14,6 @@
 
 .navButton{
     width: 20%;
-    border-radius: 30px;
     height: 40px;
     background-color: #d7d7d7;
     align-content: center;
@@ -35,4 +34,17 @@ a{
 
 h1{
     font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.aboutMeText{
+    text-align: center;
+    padding: 5%;
 }
