@@ -27,7 +27,7 @@ window.onload = function() {
         else{
             emailjs.send("service_sks2nxi","template_ctt9eks",this);
             console.log("Email sent!");
-            input.setAttribute(userName, "");
+            //successMessage.setAttribute(visibility, visible);
         }
     });
 };

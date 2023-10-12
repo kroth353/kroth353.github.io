@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> 
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width">
     <title>Contact Form</title>
 	<script defer src='js/javaScript.js'></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -22,18 +22,19 @@
         <input type="hidden" name="contact_number">
         <br><br>
 		<label>Name</label>
-        <input type="text" placeholder="John Doe" name="user_name" id="userName" required/>
+        <input type="text" placeholder="John Doe" name="user_name" id="userName" required>
 		<br><br>
 		<label>Phone Number</label>
-    	<input id="userPhone" type="text" name="user_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+    	<input id="userPhone" type="text" name="user_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         <br><br>
 		<label>Email</label>
-        <input id="userEmail" type="email" placeholder="example@abc123.com"name="user_email"required/>
+        <input id="userEmail" type="email" placeholder="example@abc123.com" name="user_email" required>
         <br><br>
 		<label>Message</label>
-        <textarea id="userMessage" name="message" placeholder="abc123 def456"required></textarea>
+        <textarea id="userMessage" name="message" placeholder="abc123 def456" required></textarea>
         <br><br>
 		<input type="submit" value="Send">
+		<p class="successMessage" name="SuccessMessage">Email Sent!</p>
     </form>
 	</div>
 </body>
