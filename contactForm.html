@@ -5,55 +5,36 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width">
     <title>Contact Form</title>
+	<script defer src='js/javaScript.js'></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('_ZsZk3LwLHnxw6maa');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </head>
 <body>
 	<div class="navbar">
-		<h1> About Me </h1>
+		<h1> Contact Form </h1>
 		<a href="https://kroth353.github.io/" class="navButton">Home</a>
 		<a href="https://jillsuecamp.github.io" class="navButton"> Previous Student (Jillian Camp)</a>
 		<a href="https://mattm401.github.io/" class="navButton"> Cisc474 Class Website </a>
 		<a href="https://khammen.github.io" class="navButton"> Next Student (Kurt Hammen)</a>
 	</div>
 	<br><br>
+	<div class="container-form">
     <form id="contact-form">
         <input type="hidden" name="contact_number">
         <br><br>
 		<label>Name</label>
-        <input type="text" name="user_name">
+        <input type="text" placeholder="John Doe" name="user_name" id="userName" required/>
 		<br><br>
-		<label>Phone Number (###-###-####)</label>
-    	<input type="text" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+		<label>Phone Number</label>
+    	<input id="userPhone" type="text" name="user_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
         <br><br>
 		<label>Email</label>
-        <input type="email" name="user_email">
+        <input id="userEmail" type="email" placeholder="example@abc123.com"name="user_email"required/>
         <br><br>
 		<label>Message</label>
-        <textarea name="message"></textarea>
+        <textarea id="userMessage" name="message" placeholder="abc123 def456"required></textarea>
         <br><br>
 		<input type="submit" value="Send">
     </form>
+	</div>
 </body>
 </html>
